@@ -12,7 +12,7 @@ The output is in table format suitable for posting to reddit.
 
 **Opp Losses** - Total losses by all of a team's opponents.
 
-**Opp Win %** - Opposing teams win percent. Denver, New England, Seattle, and Arizona are the only playoff teams whose opponents were above .500. Oakland was the overall leader in this category, but their opponents benefited from getting to play Oakland (sorry Raiders fans).
+**Opp Win %** - Opposing teams win percent.
 
 The next few columns tell how each team did against teams with a winning (above .500) record or losing (.500 and below) record.
 
