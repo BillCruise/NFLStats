@@ -1,12 +1,12 @@
 # NFLStats
 Generates summary stats for an NFL season given team schedules and scores.
 
-NFL 2015 standings downloaded from: http://www.nfl.com/standings?category=league
-Playoff symbols (x, y, z, *) removed manually.
+NFL 2015 standings downloaded from [NFL League Standings](http://www.nfl.com/standings?category=league).
+Playoff symbols (x, y, z, *) were removed manually.
 
-NFL 2015 scores and schedule downloaded from http://www.scoreboard.com/nfl/results/
+NFL 2015 scores and schedule downloaded from [NFL Scores / Results](http://www.scoreboard.com/nfl/results/).
 
-The output is in table format suitable for posting to reddit.
+The output is in table format suitable for posting to [reddit](https://www.reddit.com/).
 
 **Opp Wins** - Total wins by all of each team's opponents.
 
