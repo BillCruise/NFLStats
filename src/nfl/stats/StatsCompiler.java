@@ -10,7 +10,7 @@ public class StatsCompiler {
      * @param args
      */
     public static void main(String[] args) {
-        int year = 2015;
+        int year = 2016;
         
         // load season-ending standings from file
         StandingsLoader standLoader = new StandingsLoader(year);
