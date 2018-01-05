@@ -36,13 +36,25 @@ public class StandingsLoader {
                 line = scanner.nextLine();
                 String[] tokens = line.split("\\t");
                 String name = tokens[0];
-                int wins = Integer.parseInt(tokens[3]);
-                int losses = Integer.parseInt(tokens[4]);
-                int ties = Integer.parseInt(tokens[5]);
-                double pct = Double.parseDouble(tokens[6]);
                 
-                Team team = new Team(name, wins, losses, ties, pct);
-                standings.add(team);
+                if (year < 2017) { // Conv and Div columns were removed in 2017
+	                int wins = Integer.parseInt(tokens[3]);
+	                int losses = Integer.parseInt(tokens[4]);
+	                int ties = Integer.parseInt(tokens[5]);
+	                double pct = Double.parseDouble(tokens[6]);
+	                
+	                Team team = new Team(name, wins, losses, ties, pct);
+	                standings.add(team);
+                }
+                else {
+                	int wins = Integer.parseInt(tokens[1]);
+	                int losses = Integer.parseInt(tokens[2]);
+	                int ties = Integer.parseInt(tokens[3]);
+	                double pct = Double.parseDouble(tokens[4]);
+	                
+	                Team team = new Team(name, wins, losses, ties, pct);
+	                standings.add(team);
+                }
             }
         }
         catch(FileNotFoundException fnfe) {
